@@ -18,7 +18,6 @@
 // 	}
 // });
 
-
 Template.yaksSubmit.events({
 	'submit form': function(e) {
 	e.preventDefault();

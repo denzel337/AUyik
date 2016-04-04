@@ -1,4 +1,19 @@
 /*========================
+--------Landing Page------*/
+#landing-page {
+  background: url(aerial-photo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 921px;
+}
+/*========================
 --------Colors--------*/
 
 	.welbypurple {
@@ -31,7 +46,7 @@
 --------Generals--------*/
 
   .logo {
-    border-radius: 35px;
+    font-size: 20px;
   }
 
   .mb-down {
@@ -63,9 +78,10 @@
  		letter-spacing: .09em;
 	}
 
-
-
-
+  #display-name {
+    font-size: 30px;
+    font-style: bold;
+  }
 
 /*========================
 --------SIGNUP--------*/

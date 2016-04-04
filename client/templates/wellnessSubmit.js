@@ -12,6 +12,5 @@ Template.wellnessSubmit.events({
 			/*post._id = Yaks.insert(post);*/
 			Router.go('wellnessList');
 		}
-		
 	}
 });

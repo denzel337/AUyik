@@ -10,6 +10,4 @@ Meteor.methods({
 	commentInsert: function(comment) {
 		Comments.insert(comment);
 	}
-
-	
 });

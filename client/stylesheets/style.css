@@ -30,6 +30,10 @@
 /*========================
 --------Generals--------*/
 
+  .logo {
+    border-radius: 35px;
+  }
+
   .mb-down {
     margin-bottom: -0.4rem;
   }

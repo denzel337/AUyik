@@ -28,7 +28,7 @@ Template.yaksSubmit.events({
 	};
 		// Yak and postTitle are retrieved as objects. JSON.stringify({})  
 		// Checks to make sure that postTitle and yak aren't null
-		if ((JSON.stringify(postTitle) != JSON.stringify({})) && (JSON.stringify(yak) != JSON.stringify({}))) {
+		if ((post.postTitle !== "") && (post.yak !== "")) {
 			post._id = Yaks.insert(post);
 			Router.go('yaksList', post);
 		} else {

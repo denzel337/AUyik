@@ -1,0 +1,7 @@
+<template name="banquetHall">
+	<h2 class="phl mll fl">What's on your mind?</h2>
+		<a class="btn center fr phl mhx" href="/submit" type="button">Send Yak</a> 
+		{{#each yaks}}
+			{{> yakItem}}
+		{{/each}}
+</template>

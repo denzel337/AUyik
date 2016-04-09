@@ -16,10 +16,13 @@ Router.route('/submit', {name: 'yaksSubmit'});
 
 Router.route('/login', {name: 'firstpage'});
 
+Router.route('/library', {name: 'library'});
 
-// Josh: tried routing to a new list from /wellness
-// Router.route('/wellness', {name: 'yaksList'})
-// Router.route('/wellness', {name: 'yaks'})
+Router.route('/dorms', {name: 'dorms'});
+
+Router.route('/banquethall', {name: '/banquetHall'});
+
+Router.route('/spartanspot', {name: '/spartanSpot'});
 
 Router.route('/yaks/:_id', {
 	name: 'yakPage',

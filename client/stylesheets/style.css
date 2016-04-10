@@ -2,19 +2,50 @@
 --------Landing Page------*/
 #landing-page {
   background: url(aerial-photo.jpg) no-repeat center center fixed; 
+  background-size: 100% auto;
+  height: 100%; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-radius: 0px;
 }
 
-.container {
-  width: 100%;
-  height: 921px;
+#landing-page-banner {
+  height: 225px;
+  color: black;
+  font-size: 40px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: white;
+}
+
+#banner-image {
+  max-width: 350px; 
+  max-height: 350px;
+  height: auto; 
+  width: auto; 
+}
+
+.fa-cog {
+  color: blue;
+}
+
+.bullet-text {
+  color: black;
+}
+
+.banner-buttons {
+  background-color: white;
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+  outline-color: white;
 }
 /*========================
 --------Colors--------*/
+
 
 	.welbypurple {
 		color: #13146B;
@@ -41,9 +72,30 @@
 		color: #50C7CB;
 	}
 
-
 /*========================
 --------Generals--------*/
+
+.navbar {
+  background-color: white;
+}
+.navbar .nav.pull-right {
+    float: right;
+    margin-right: 98px; /*set margin this way in your custom styesheet*/
+}
+
+  ul {
+    list-style-type: none;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  html {height: 101%;}
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
 
   .logo {
     font-size: 20px;
@@ -52,7 +104,6 @@
   .mb-down {
     margin-bottom: -0.4rem;
   }
-
 
 	a {
 		text-decoration: none;
@@ -77,6 +128,10 @@
 	.l-space {
  		letter-spacing: .09em;
 	}
+
+  .list-item {
+    font-size: 14px;
+  }
 
   #display-name {
     font-size: 30px;
@@ -281,8 +336,9 @@ input:focus {
     position: absolute;
 }
 
-body { margin: 0 }
+body { margin: 0; padding: 0;}
 img { max-width: 100% }
 svg { max-height: 100% }
+.navbar { margin-bottom:0px !important; }
 
 

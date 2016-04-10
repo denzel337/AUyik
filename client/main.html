@@ -5,25 +5,37 @@
 
     <!-- bass css, object oriented grid framework -->
     <!-- tackyons css for sizing/space/typography -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header class="header clearfix mx-auto col-11 mts navbar">
-        <a class="logo" href="/">Aurora University</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">AU YAK</a>
+        </div>
 
-        <ul class="list-reset mtm">
-      <!--Josh: inserts the wellness, coursework, and random channels. We need to define templates-->
-        <li class="di phm f3-l"><a class="brand " href="/YaksList">
-        All Yaks</a></li>
-        <li class="di phm f3-l"><a class="brand " href="/Library">
-        Library</a></li>
-        <li class="di phm f3-l"><a class="brand" href="/Dorms">
-        Dorms</a></li>
-        <li class="di phm f3-l"><a class="brand" href="/BanquetHall">
-        University Banquet Hall</a></li>
-        <li class="di phm f3-l"><a class="brand" href="/SpartanSpot">
-        Spartan Spot</a></li>
-       <!-- Evan: using a template to display the logout near the top -->
-          {{> signout}}
-        </ul>
-    </header>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class="list-item" href="/YaksList">SHOW ALL YAKS</a></li> 
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="list-item" href="/Library">LIBRARY</a></li> 
+            <li role="separator" class="divider"></li>
+            <li><a class="list-item" href="/Dorms">DORMS</a></li> 
+            <li><a class="list-item" href="/BanquetHall">UBH</a></li>
+            <li><a class="list-item" href="/SpartanSpot">SPARTAN SPOT</a></li>
+            <li><a class="list-item"> {{> signout }}</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 </body>

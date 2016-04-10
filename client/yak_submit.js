@@ -26,8 +26,8 @@ Template.yaksSubmit.events({
 		postTitle: $(e.target).find('[name=postTitle]').val(),
 		yak: $(e.target).find('[name=yak]').val()
 	};
-		// Yak and postTitle are retrieved as objects. JSON.stringify({})  
-		// Checks to make sure that postTitle and yak aren't null
+		// Yak and postTitle are retrieved from the post object.  
+		// Checks to make sure that postTitle and yak aren't empty
 		if ((post.postTitle !== "") && (post.yak !== "")) {
 			post._id = Yaks.insert(post);
 			Router.go('yaksList', post);

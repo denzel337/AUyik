@@ -3,8 +3,23 @@ Template.yaksList.helpers({
 		return Yaks.find({}, {sort : {score: -1}});
 	}
 });
- var MAP_ZOOM = 15;
-
-Meteor.startup(function() {  
-  GoogleMaps.load();
+ Template.library.helpers({
+	yaks: function() {
+		return Yaks.find({}, {sort : {score: -1}});
+	}
+});
+  Template.dorms.helpers({
+	yaks: function() {
+		return Yaks.find({}, {sort : {score: -1}});
+	}
+});
+   Template.spartanSpot.helpers({
+	yaks: function() {
+		return Yaks.find({}, {sort : {score: -1}});
+	}
+});
+    Template.banquetHall.helpers({
+	yaks: function() {
+		return Yaks.find({}, {sort : {score: -1}});
+	}
 });

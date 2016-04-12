@@ -340,5 +340,6 @@ body { margin: 0; padding: 0;}
 img { max-width: 100% }
 svg { max-height: 100% }
 .navbar { margin-bottom:0px !important; }
+button:focus {outline:0 !important; }
 
 

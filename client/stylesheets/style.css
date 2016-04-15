@@ -71,6 +71,13 @@
 	.light-Teal {
 		color: #50C7CB;
 	}
+	
+/*========================
+--------Yak List------*/
+
+#twitter-widget-0 .twitter-tweet-wrap {
+	padding-left: 0 !important;
+}
 
 /*========================
 --------Generals--------*/

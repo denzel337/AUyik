@@ -1,9 +1,18 @@
 <template name="spartanSpot">
-	<section class="clearfix mx-auto sm-col-11 md-col-8 lg-col-7 mvxl">
-		<h2 class="phl mll fl">What's on your mind?</h2>
-		<a class="btn center fr phl mhx" href="/submit" type="button">Send Yak</a> 
-		{{#each yaks}}
-			{{> yakItem}}
-		{{/each}}
-	</section>
+	<div class="row">
+	<br>
+		<div class="col-lg-3">
+			<a class="twitter-timeline" width="700" height="750" href="https://twitter.com/AuroraU" data-widget-id="720989049637511168">Tweets by @AuroraU</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>      
+		</div>
+		<div class="col-lg-9">
+			<section class="clearfix mx-auto sm-col-11 md-col-8 lg-col-7 mvxl">
+				<h2 class="phl mll fl">What's on your mind?</h2>
+				<a class="btn center fr phl mhx" href="/submit" type="button">Send Yak</a>         
+				{{#each yaks}}
+					{{> yakItem}}
+				{{/each}}
+			</section>
+		</div>
+	</div>
 </template>
